@@ -1,0 +1,94 @@
+body{
+    background-color: #e60073;
+}
+
+#parent{
+  width: fit-content;
+  margin: auto;
+}
+
+#title
+{
+   margin: auto;
+   color: blue;
+   text-align: center;
+   margin-bottom: 25px;
+}
+
+.demo
+{
+    display: flex;
+    align-items: center;
+    background-color: azure;
+    margin-bottom: 0;
+    width: 800px;
+    text-align: center;
+    padding: 0 10px;
+}
+.demo img
+{
+    padding: 25px;
+}
+button
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 100px;
+    height: 50px;
+}
+
+
+#btn1{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+
+#btn2{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+
+#link1{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 20px;
+}
+
+#link2{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 20px;
+}
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+#download{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}

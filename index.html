@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+
+</head>
+<body onload="screenShot()">
+    
+    <audio id="audio1" loop>
+        <source src="dog.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="audio2" loop>
+        <source src="lion.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <i id="btn1" onclick="start()" class="fa-solid fa-play"></i> 
+
+    <i id="btn2" onclick="start2()" class="fa-solid fa-play fa-rotate-180"></i>
+
+    <div id="parent">
+        <h1 id="title" class="glow">Bhagavad Gita</h1>
+        <div class="demo">
+            <img src="img/gita1.jpg" width="300px" height="350px" alt="image is not available">
+            <h1 id="demo" class="quote"> The darkness of many years in your life will now disappear.</h1>
+        </div>
+         <a id="download" onclick="ssofQuote()" class="glow">Download</a>
+         <button onclick="change()">Next</button>
+    </div>
+
+
+
+    <div>
+        <a href="https://bhagawadgita.vercel.app/books/english.pdf" id="link1" class="glow">Read Gita in English</a>
+
+        <a href="https://bhagawadgita.vercel.app/books/telugu.pdf" id="link2" class="glow">Read Gita in Telugu</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
